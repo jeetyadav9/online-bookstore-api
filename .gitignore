@@ -1,0 +1,52 @@
+# Build output
+bin/
+obj/
+
+# IDE files
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+*.rsuser
+
+# Git internals when packaging
+.git/
+
+# Runtime data
+*.db
+*.sqlite
+*.sqlite3
+*.db-shm
+*.db-wal
+logs/
+*.log
+exports/
+backups/
+
+# Test and coverage
+TestResults/
+coverage/
+*.trx
+*.coverage
+coverage.cobertura.xml
+
+# Local secrets and environment
+.env
+.env.*
+appsettings.Production.json
+secrets.json
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Frontend caches/builds
+node_modules/
+dist/
+build/
+.cache/
+
+# NuGet
+*.nupkg
+packages/
