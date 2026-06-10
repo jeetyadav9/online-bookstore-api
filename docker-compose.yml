@@ -1,0 +1,17 @@
+services:
+  online-bookstore-api:
+    build: .
+    container_name: online-bookstore-api
+    ports:
+      - "8080:8080"
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ConnectionStrings__DefaultConnection: Data Source=/app/data/bookstore.db
+      Jwt__Issuer: OnlineBookstoreApi
+      Jwt__Audience: OnlineBookstoreClient
+      Jwt__Key: DevelopmentOnlySuperSecretKeyForJwtTokenGeneration12345
+    volumes:
+      - bookstore_data:/app/data
+
+volumes:
+  bookstore_data:
